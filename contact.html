@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--for font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+		
+	<title>Bless Support Services</title>
+	<link rel="icon" type="image/x-icon" href="images/BSS-White-Background-Logo.ico">
+</head>
+
+<body>
+	<section>
+		<div class="topHead">
+			<div class="topHeadingLogo">
+				<img src="images/BSS_logo.png">
+			</div>
+			
+			<div class="headingMenu">
+				<div class="headingMenuContact">
+					<a href="tel:+61423879596">
+						<i class="fa fa-phone" style="font-size:20px; color:#850044;"></i> 
+						&nbsp;+61 423879596&nbsp;&nbsp;&nbsp;<a>|</a>
+					</a>
+					
+					<a href="mailto:info@blesssupport.com">
+						<i class="fa fa-envelope" style="font-size:20px; #850044;;"></i> 
+						&nbsp;info@blesssupport.com
+					</a>
+				</div>
+				
+				<ul class="headnav-list">
+					<li><a href="home.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="workwithus.html">Work With Us</a></li>
+					<li class="dropdown">
+						<button class="dropbtn"  style="box-shadow: 0px 1px 0px 0px #85004f;">Forms 
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<a href="intakeform.html" style="padding: 14px 11.5px;">Client Intake</a>
+						</div>
+					</li> 
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	
+	<section>
+		<div class="contactHead">
+			<div class="contactSecOneRight w3-animate-bottom ">
+				<img class="contactNdisLogo" src="images/ndis-logo.png">
+				<h1>If you need any assistance or support, do not hesitate to contact us.</h1>
+			</div>
+			
+			<div class="contactSecOneleft w3-animate-bottom ">
+				<img src="images/2f012c2031.jpg">
+			</div>
+		</div>
+	</section>
+	
+	<section>
+		<div class="contctInfoSec">
+			<div class="contctInfoLocation">
+				<h1>Our <a>Office</a></h1>
+				<p><i class="fa fa-map-marker" style="font-size:33px; color:#850044;"></i> 
+					8/9 Frogmore Road, Carnegie, VIC 3163.</p>
+				<p><button class="btndirection" onclick="window.location.href = 'https://goo.gl/maps/AUQzo3sBNHKr3Rge8';">Get Direction</button>
+				</p>
+			</div>
+			
+			<div class="contctInfoCall">
+				<h1>Our Phone <a>Number</a> </h1>
+				<p>	<a href="tel:+61423879596"> <i class="fa fa-phone" style="font-size:25px;">
+						&nbsp;<span style="color:black">+61 423879596</span>
+					</i></a>
+				</p>
+				<p style="margin-left: 16px;margin-top: 25px;"><button class="btndirection"><a  href="tel:+61423879596" style="color:white;text-decoration:none;">Call Now</a></button>
+				</p>
+			</div>
+			
+			<div class="contctInfoMail">
+				<h1>Our <a>Email</a> </h1>
+				<p style="margin-left: 65px;">	<a href="mailto:info@blesssupport.com"><i class="fa fa-envelope" style="font-size:21px;">
+						&nbsp;<span style="color:black">info@blesssupport.com</span>
+					</i></a>
+				</p>
+				<p style="margin-left: 21px; margin-top: 25px;"><button class="btndirection"><a href="mailto:info@blesssupport.com" style="color:white;text-decoration:none;">Email Now</a></button>
+				</p>
+			</div>
+		</div>
+	</section>
+	
+	<section id="contact">
+		<div class="formbg">
+			<div style="padding-top:1 %; background-color:#ffffffc7; height:700px;">
+				<div class="contactForm">
+					<p style="color:white; font-size: 30px; font-family:  Cambria,Georgia,serif; padding-top:5%;" align="center"><b>How can we assist you?</b></p>
+					
+					<form action="https://formsubmit.co/sejal.kalekar.pd@gmail.com" method="POST">				
+						<label for="fullname">Name</label><br>
+						 <input type="text" id="fullname" name="Name"><br><br>
+						  
+						<label for="MobileNo">Phone Number</label><br>
+						<input type="text" id="MobileNo" name="Phone Number"><br><br>
+						
+						<label for="Email">Email ID</label><br>
+						<input type="text" id="Email" name="Email"><br><br>
+						
+						<label for="Message">Message</label><br>
+						<textarea name="Message" id="Message"  style="height:100px"></textarea><br><br>
+						
+						<input type="submit" value="SUBMIT" onclick="send()"> 
+						 
+						<div id="my-form-status" align="center" style="color:yellow"></div>
+					</form> 	
+				</div>
+			</div>
+		</div>
+		
+		<!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+		
+		<!-- <script> -->
+			<!-- function send(){ -->
+				<!-- var name	= document.getElementById("fullname").value; -->
+				<!-- var phno	= document.getElementById("MobileNo").value; -->
+				<!-- var email	= document.getElementById("Email").value; -->
+				<!-- var Message	= document.getElementById("Message").value;	 -->
+		
+				<!-- var body	= "name	:" + name +  -->
+							<!-- "<br> Phone Number	:" + phno +  -->
+							<!-- "<br> Email	:"	+ email +  -->
+							<!-- "<br> Message:" + Message; -->
+			 
+				<!-- Email.send({ -->
+					<!-- Host : "smtp.elasticemail.com", -->
+					<!-- Username : "sejalrkalekar@gmail.com", -->
+					<!-- Password : "510681E8064976D04B697E8DB0B455278D63", -->
+					<!-- To : 'sejal.pd.form@gmail.com', -->
+					<!-- From : "sejalrkalekar@gmail.com", -->
+					<!-- Subject : "Email from contact form", -->
+					<!-- Body : body -->
+				<!-- }).then( -->
+				  <!-- message => alert(message) -->
+				<!-- ); -->
+			<!-- } -->
+		<!-- </script> -->
+	</section>
+	
+	<section>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.5435785919763!2d145.06180051506504!3d-37.89435534643171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad66a3092514851%3A0xa7284b7d6ad5c9b5!2s8%2F9%20Frogmore%20Rd%2C%20Carnegie%20VIC%203163%2C%20Australia!5e0!3m2!1sen!2sin!4v1675848379585!5m2!1sen!2sin" width="100%" height="450" style="margin-top:2%; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</section>
+	
+	<footer>
+		<div style="height:100%;">	
+			<div class="footerLogo">
+				<img src="images/BSS_logo.png">
+			</div>
+			
+			<div>
+				<div class="lineclass"></div>
+				<nav class="navbar background">
+					<ul class="nav-list">
+						<li class="navHover"><a href="home.html" >Home</a></li>
+						<li class="navHover"><a href="about.html">About Us</a></li>
+						<li class="navHover"><a href="services.html">Services</a></li>
+						<li class="navHover"><a href="workwithus.html">Work With Us</a></li>
+						<li class="footer_dropdown">
+							<button class="footer_dropbtn">Forms 
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<div class="dropdown-content">
+								<a href="intakeform.html" style="padding: 14px 1.5px; margin-top: -1px;">Client Intake</a>
+							</div>
+						</li> 
+						<li class="navHover"><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+			
+			<div class="footerLocation">
+				<p>
+					<a href="https://goo.gl/maps/AUQzo3sBNHKr3Rge8">
+						<i class="fa fa-map-marker" style="font-size:20px; color:#000;"></i> 
+						&nbsp;8/9 frogmore road, carnegie, VIC 3163.
+					</a>
+				</p>
+				
+				<p>
+					<a href="tel:+61423879596">
+						<i class="fa fa-phone" style="font-size:20px; color:#000; margin-left: 0px;"></i> 
+						&nbsp;+61 423879596
+					</a>
+				</p>
+				
+				<p>
+					<a href="mailto:info@blesssupport.com">
+						<i class="fa fa-envelope" style="font-size:20px; color:#000;;"></i> 
+						&nbsp;info@blesssupport.com
+					</a>
+				</p>
+				
+				<div class="footerndisLogo">
+					<img src="images/ndis-logo.png">
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<section>
+		<div class="footerwatermark">
+			<div style="width:50%; float:left">
+				<p>Copyright @2023 <a href="https://blesssupport.com.au/"> <b>Bless Support Services</b></a></p>
+			</div>
+			
+			<div style="width:50%; float:right">
+				<p align="right">Designed and Developed by <a href="https://www.proceeddigital.com/"> <b>Procced Digital Private Limited</b></a></p>
+			</div>
+		</div>
+	</section>
+</body>
+
+	
+	
+</html>
